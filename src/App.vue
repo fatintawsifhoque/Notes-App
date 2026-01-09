@@ -30,7 +30,7 @@
         No notes yet. Add one above!
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 border border-[#450693] p-4 rounded-lg">
+      <div v-if="notes.length !== 0" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 border border-[#450693] p-4 rounded-lg">
         <div
           v-for="note in notes"
           :key="note.id"
